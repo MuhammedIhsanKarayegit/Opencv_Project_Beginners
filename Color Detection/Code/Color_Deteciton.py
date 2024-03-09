@@ -30,13 +30,13 @@ def find_color(image_path):
 
     # Eğer belirli bir renk varsa, renk adını döndür; yoksa None döndür
     if np.any(mask_red > 0):
-        color_name = "Kırmızı"
+        color_name = "Kirmizi"
     elif np.any(mask_green > 0):
-        color_name = "Yeşil"
+        color_name = "Yesil"
     elif np.any(mask_yellow > 0):
-        color_name = "Sarı"
+        color_name = "Sari"
     else:
-        color_name = "Belirli bir renk bulunamadı"
+        color_name = "Belirli bir renk bulunmadi"
 
     # Resmi ekrana yazdır
     cv2.imshow('Girilen Resim', image)
