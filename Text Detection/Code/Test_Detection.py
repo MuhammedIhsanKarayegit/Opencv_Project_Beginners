@@ -11,7 +11,7 @@ def text_detection(img_path):
     # text_ içindeki her bir yazı t değişkeni içine alınıp bu yazı için bir dikdörtgen oluşturuluyor ve bu dikdörtgenin üzerine resimdeki yazı yazdırılıyor.
     for t in text_:
         print(t)
-        bbox, text, score = t
+        bbox, text = t
         cv.rectangle(img, bbox[0], bbox[2], (0, 255, 0), 5)
         cv.putText(img, text, bbox[0], cv.FONT_HERSHEY_COMPLEX, 0.65, (0,0,0), 1)
 
